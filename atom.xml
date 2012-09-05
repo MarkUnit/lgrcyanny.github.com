@@ -4,7 +4,7 @@
   <title><![CDATA[Cyanny's Live]]></title>
   <link href="http://lgrcyanny.github.com/atom.xml" rel="self"/>
   <link href="http://lgrcyanny.github.com/"/>
-  <updated>2012-08-29T22:37:58+08:00</updated>
+  <updated>2012-09-05T23:18:12+08:00</updated>
   <id>http://lgrcyanny.github.com/</id>
   <author>
     <name><![CDATA[Cyanny Liang]]></name>
@@ -12,23 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Postgraduate Recommendation Review (part1-OS)]]></title>
-    <link href="http://lgrcyanny.github.com/blog/2012/08/29/postgraduate-recommendation-review-part1-os/"/>
-    <updated>2012-08-29T22:32:00+08:00</updated>
-    <id>http://lgrcyanny.github.com/blog/2012/08/29/postgraduate-recommendation-review-part1-os</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Postgraduate Recommendation Experience]]></title>
-    <link href="http://lgrcyanny.github.com/blog/2012/08/28/postgraduate-recommendation-experience/"/>
-    <updated>2012-08-28T21:32:00+08:00</updated>
-    <id>http://lgrcyanny.github.com/blog/2012/08/28/postgraduate-recommendation-experience</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
 </feed>
