@@ -1,5 +1,3 @@
-package test;
-
 public class HeapSort
 {
 	public static void heapSort (int[] arr)
@@ -17,7 +15,7 @@ public class HeapSort
 			filterDown(arr, 0, i);
 		}
 	}
-	
+
 	/**
 	 * Get the left child of i
 	 * @param i
@@ -27,12 +25,12 @@ public class HeapSort
 	{
 		return 2 * i + 1;
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * @param arr  The array to be heap sorted
 	 * @param i    The index which is the start to be filter down
-	 * @param n    The length 
+	 * @param n    The length
 	 */
 	private static void filterDown(int[] arr, int i, int n)
 	{
@@ -43,8 +41,8 @@ public class HeapSort
 			child = leftChild(i);
 			if (child != n - 1 && arr[child] < arr[child + 1]) // the condition "child != n - 1" is important
 			{
-				child++;				
-			}			
+				child++;
+			}
 			if (tmp < arr[child])
 			{
 				arr[i] = arr[child];
@@ -54,16 +52,16 @@ public class HeapSort
 			}
 		}
 		arr[i] = tmp;
-		
+
 	}
-	
+
 	public static void swap(int[] arr, int i ,int j)
 	{
 		int tmp = arr[i];
 		arr[i] = arr[j];
 		arr[j] = tmp;
 	}
-	
+
 	public static void display(int[] arr)
 	{
 		for (int i : arr)
@@ -71,7 +69,7 @@ public class HeapSort
 			System.out.println(i);
 		}
 	}
-	
+
 	/**
 	 * @param args
 	 */
