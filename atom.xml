@@ -4,7 +4,7 @@
   <title><![CDATA[Cyanny's Live]]></title>
   <link href="http://lgrcyanny.github.com/atom.xml" rel="self"/>
   <link href="http://lgrcyanny.github.com/"/>
-  <updated>2012-09-07T20:21:42+08:00</updated>
+  <updated>2012-09-07T20:26:15+08:00</updated>
   <id>http://lgrcyanny.github.com/</id>
   <author>
     <name><![CDATA[Cyanny Liang]]></name>
@@ -29,7 +29,7 @@
 <!-- more -->
 
 
-<figure class='code'><figcaption><span>Heap Sort  (heapsort.java)</span> <a href='http://lgrcyanny.github.com/downloads/code/algorithm/heapsort.java'>download</a></figcaption>
+<figure class='code'><figcaption><span>Heap Sort (heapsort.java)</span> <a href='http://lgrcyanny.github.com/downloads/code/algorithm/heapsort.java'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -113,7 +113,13 @@
 <span class='line-number'>81</span>
 <span class='line-number'>82</span>
 <span class='line-number'>83</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HeapSort</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> * Heap sort for an array</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HeapSort</span>
 </span><span class='line'><span class="o">{</span>
 </span><span class='line'>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">heapSort</span> <span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">)</span>
 </span><span class='line'>  <span class="o">{</span>

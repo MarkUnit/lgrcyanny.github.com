@@ -1,3 +1,6 @@
+/**
+ * Heap sort for an array
+ */
 public class HeapSort
 {
 	public static void heapSort (int[] arr)
