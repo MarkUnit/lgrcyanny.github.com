@@ -9,7 +9,7 @@
   <meta name="author" content="Cyanny Liang">
 
   
-  <meta name="description" content="Life Aug 22nd, 2012 Aug 22nd, 2012 Comments Please enable JavaScript to view the comments powered by Disqus. GitHub Repos Status updating... @ &hellip;">
+  <meta name="description" content=" Life Aug 22nd, 2012 Aug 22nd, 2012 Tweet Comments Please enable JavaScript to view the comments powered by Disqus. Recent Posts Heap sort ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -54,7 +54,7 @@
       <td><span>Get Updates: &nbsp;</span></td>
       <td><a href="#" onclick="window.open('','FeedBurner','menubar=no,width=600,height=600,toolbar=no'); return false;" class="btn"><i class="icon-envelope"></i> By Email</a></td>
       <td><a href="/atom.xml" class="btn"><i class="icon-cog"></i> By RSS</a></td>
-      <td><a href="http://twitter.com/lgrcyanny" class="btn"><i class="icon-twitter-sign"></i> On Twitter</a></td>
+      <td><a href="http://twitter.com/" class="btn"><i class="icon-twitter-sign"></i> On Twitter</a></td>
     </tr>
   </table>
 </div>
@@ -145,6 +145,8 @@
           <div class="sharing">
   <br/>
   
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://lgrcyanny.github.com/life/index.html" data-via="" data-counturl="http://lgrcyanny.github.com/life/index.html" >Tweet</a>
+  
   
   <div class="g-plusone" data-size="small"></div>
   
@@ -169,49 +171,16 @@
   <div class="span4 sidebar">
     <div class="well">
       
-        
-<section>
-  <h2>GitHub Repos</h2>
-  <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
+        <section>
+  <h2>Recent Posts</h2>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/09/06/heap-sort/">Heap sort</a>
+      </li>
+    
   </ul>
-  
-  <a href="https://github.com/lgrcyanny">@lgrcyanny</a> on GitHub
-  
-  <script type="text/javascript">
-    $.domReady(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'lgrcyanny',
-            count: 0,
-            skip_forks: false,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
-
-
-<section>
-  <h2>Latest Tweets</h2>
-  <ul id="tweets">
-    <li class="loading">Status updating...</li>
-  </ul>
-  
-    <p>Follow <a href="http://twitter.com/lgrcyanny">@lgrcyanny</a></p>
-  
-</section>
-
-
-
 
       
     </div>
@@ -271,6 +240,21 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+    
+    $(document).ready(function(){
+      getTwitterFeed("", 0, false);
+    });
+  </script>
 
 
   </div>
