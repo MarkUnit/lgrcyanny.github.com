@@ -13,6 +13,6 @@ categories: Algorithm
 3. 将堆的第一个元素（最大的元素）和最后一个元素交换，然后从堆的第一个元素开始到倒数第二的元素，构建最大堆；<br>
    再交换第一个元素和倒数第二个元素，然后从堆的第一个元素到倒数第三个元素构建最大堆...以此类推，直到结束<br>
 
-{% include_code test.js %}
+<!-- more -->
 
-
+{% include_code Heap Sort lang:java algorithm/heapsort.java %}
