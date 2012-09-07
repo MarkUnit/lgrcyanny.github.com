@@ -4,7 +4,7 @@
   <title><![CDATA[Cyanny's Live]]></title>
   <link href="http://lgrcyanny.github.com/atom.xml" rel="self"/>
   <link href="http://lgrcyanny.github.com/"/>
-  <updated>2012-09-07T21:36:09+08:00</updated>
+  <updated>2012-09-07T23:26:43+08:00</updated>
   <id>http://lgrcyanny.github.com/</id>
   <author>
     <name><![CDATA[Cyanny Liang]]></name>
@@ -14,13 +14,13 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Heap sort]]></title>
+    <title type="html"><![CDATA[Heap sort（堆排序）]]></title>
     <link href="http://lgrcyanny.github.com/blog/2012/09/06/heap-sort/"/>
     <updated>2012-09-06T20:55:00+08:00</updated>
     <id>http://lgrcyanny.github.com/blog/2012/09/06/heap-sort</id>
     <content type="html"><![CDATA[<p>最近面试，考试之类的都在准备数据结构的东西，不断重复的写快排和堆排的代码，现在把这些东西都记录下来，有备无患咯
 本文主要是堆排的算法。<br>
-堆排算法思想：<br>
+堆排序算法思想：<br>
 1. 采用数组来表示堆<br>
 2. 构建最大堆<br>
 3. 将堆的第一个元素（最大的元素）和最后一个元素交换，然后从堆的第一个元素开始到倒数第二的元素，构建最大堆；<br>
