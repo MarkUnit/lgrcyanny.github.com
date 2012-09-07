@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Cyanny's Live]]></title>
-  <link href="http://lgrcyanny.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Algorithm | Cyanny's Live]]></title>
+  <link href="http://lgrcyanny.github.com/blog/categories/algorithm/atom.xml" rel="self"/>
   <link href="http://lgrcyanny.github.com/"/>
   <updated>2012-09-07T13:10:49+08:00</updated>
   <id>http://lgrcyanny.github.com/</id>
@@ -24,9 +24,9 @@
 1. 采用数组来表示堆
 2. 构建最大堆
 3. 将堆的第一个元素（最大的元素）和最后一个元素交换，然后从堆的第一个元素开始到倒数第二的元素，构建最大堆；
-   再交换第一个元素和倒数第二个元素，然后从堆的第一个元素到倒数第三个元素构建最大堆&#8230;以此类推，直到结束</p>
+   再交换第一个元素和倒数第二个元素，然后从堆的第一个元素到倒数第三个元素构建最大堆...以此类推，直到结束</p>
 
-<p>Liquid error: No such file or directory - python -c &#8220;import sys; print sys.executable&#8221;</p>
+<p>Liquid error: undefined method `Py_IsInitialized' for RubyPython::Python:Module</p>
 ]]></content>
   </entry>
   
