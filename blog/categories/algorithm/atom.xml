@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Algorithm | Cyanny's Live]]></title>
   <link href="http://lgrcyanny.github.com/blog/categories/algorithm/atom.xml" rel="self"/>
   <link href="http://lgrcyanny.github.com/"/>
-  <updated>2012-09-07T20:26:15+08:00</updated>
+  <updated>2012-09-07T21:28:26+08:00</updated>
   <id>http://lgrcyanny.github.com/</id>
   <author>
     <name><![CDATA[Cyanny Liang]]></name>
@@ -29,7 +29,7 @@
 <!-- more -->
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Heap Sort (heapsort.java)</span> <a href='/downloads/code/algorithm/heapsort.java'>download</a></figcaption>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Heap Sort  (heapsort.java)</span> <a href='/downloads/code/algorithm/heapsort.java'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -125,11 +125,12 @@
 </span><span class='line'>	<span class="o">{</span>
 </span><span class='line'>		<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
 </span><span class='line'>		<span class="c1">// Build a max heap</span>
-</span><span class='line'>		<span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">;</span> <span class="n">i</span><span class="o">--</span> <span class="o">)</span>
+</span><span class='line'>		<span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">;</span> <span class="n">i</span><span class="o">--)</span>
 </span><span class='line'>		<span class="o">{</span>
 </span><span class='line'>			<span class="n">filterDown</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
 </span><span class='line'>		<span class="o">}</span>
-</span><span class='line'>		<span class="c1">//Swap the last element with the first element, then bulid the max heap again</span>
+</span><span class='line'>		<span class="c1">//Swap the last element with the first element,</span>
+</span><span class='line'>		<span class="c1">//then bulid the max heap again</span>
 </span><span class='line'>		<span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">--)</span>
 </span><span class='line'>		<span class="o">{</span>
 </span><span class='line'>			<span class="n">swap</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">i</span><span class="o">);</span>
@@ -148,7 +149,6 @@
 </span><span class='line'>	<span class="o">}</span>
 </span><span class='line'>
 </span><span class='line'>	<span class="cm">/**</span>
-</span><span class='line'><span class="cm">	 *</span>
 </span><span class='line'><span class="cm">	 * @param arr  The array to be heap sorted</span>
 </span><span class='line'><span class="cm">	 * @param i    The index which is the start to be filter down</span>
 </span><span class='line'><span class="cm">	 * @param n    The length</span>
@@ -160,7 +160,8 @@
 </span><span class='line'>		<span class="k">for</span> <span class="o">(</span><span class="n">tmp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">];</span> <span class="n">leftChild</span><span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span> <span class="o">=</span> <span class="n">child</span><span class="o">)</span>
 </span><span class='line'>		<span class="o">{</span>
 </span><span class='line'>			<span class="n">child</span> <span class="o">=</span> <span class="n">leftChild</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
-</span><span class='line'>			<span class="k">if</span> <span class="o">(</span><span class="n">child</span> <span class="o">!=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">arr</span><span class="o">[</span><span class="n">child</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">child</span> <span class="o">+</span> <span class="mi">1</span><span class="o">])</span> <span class="c1">// the condition &quot;child != n - 1&quot; is important</span>
+</span><span class='line'>			<span class="c1">// the condition &quot;child != n - 1&quot; is important</span>
+</span><span class='line'>			<span class="k">if</span> <span class="o">(</span><span class="n">child</span> <span class="o">!=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">arr</span><span class="o">[</span><span class="n">child</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">child</span> <span class="o">+</span> <span class="mi">1</span><span class="o">])</span>
 </span><span class='line'>			<span class="o">{</span>
 </span><span class='line'>				<span class="n">child</span><span class="o">++;</span>
 </span><span class='line'>			<span class="o">}</span>
@@ -173,7 +174,6 @@
 </span><span class='line'>			<span class="o">}</span>
 </span><span class='line'>		<span class="o">}</span>
 </span><span class='line'>		<span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">;</span>
-</span><span class='line'>
 </span><span class='line'>	<span class="o">}</span>
 </span><span class='line'>
 </span><span class='line'>	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">swap</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">,</span><span class="kt">int</span> <span class="n">j</span><span class="o">)</span>
