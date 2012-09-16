@@ -4,7 +4,7 @@
   <title><![CDATA[Cyanny's Live]]></title>
   <link href="http://lgrcyanny.github.com/atom.xml" rel="self"/>
   <link href="http://lgrcyanny.github.com/"/>
-  <updated>2012-09-15T23:41:14+08:00</updated>
+  <updated>2012-09-16T18:48:31+08:00</updated>
   <id>http://lgrcyanny.github.com/</id>
   <author>
     <name><![CDATA[Cyanny]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[HTC Incredible S G11 RUU(G11 刷机4.0 简单的方法)]]></title>
+    <link href="http://lgrcyanny.github.com/blog/2012/09/16/htc-incredible-s-g11-ruu/"/>
+    <updated>2012-09-16T18:08:00+08:00</updated>
+    <id>http://lgrcyanny.github.com/blog/2012/09/16/htc-incredible-s-g11-ruu</id>
+    <content type="html"><![CDATA[<h2>探索刷机</h2>
+
+<p>HTC Incredible S （G11） HBoot 2.0</p>
+
+<hr />
+
+<p>今天终于有点空开始刷机了，baidu，google了一大圈，找了很多教程，以为下个ROM刷进去就行了，发现要先刷Recovery，Recovery刷不成功，进入HBoot才发现手机没有S-OFF，开始了S-OFF的过程，还制作了金卡，后来发现http://revolutionary.io/只支持HBoot1.9和1.31， 带着悲剧的心情开始搜索了。。。</p>
+
+<hr />
+
+<h2>一个简单的方法让心里很不是滋味，犯二了啊。。。</h2>
+
+<blockquote><ol>
+<li>备份通讯录和短信等东东</li>
+<li>下载官方ROM，网上很多的，我装了Dream_Rise_IS_CM9_0413.zip</li>
+<li>下载一个<strong>一键解锁</strong>工具（网上到处都是），这个工具是官方的解锁方式，可靠的说</li>
+<li>下载<strong>刷机精灵</strong>，采用HTC Sync 模式连接，选择需要的ROM开始刷机，在刷机精灵里面下载了<strong>HTC G11 ICS 4.0.4 极速省电倾力制作 适合长久使用 参赛版.zip</strong> 和 <strong>HTC G11 Superior Sense4 V5.1-Full Sense4 毒蛇微调 三指手势快速设置.zip</strong> 两个ROM， 都报错 <em>找不到Boot.img 1060</em> 最后还是自己下载的ROM刷成功了</li>
+<li>如果顺利的话，用刷机精灵很快就可以刷好了
+最后就很开心啦~~</li>
+</ol>
+</blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Heap sort（堆排序）]]></title>
