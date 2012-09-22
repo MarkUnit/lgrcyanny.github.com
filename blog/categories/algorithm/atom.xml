@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Algorithm | Cyanny's Live]]></title>
   <link href="http://lgrcyanny.github.com/blog/categories/algorithm/atom.xml" rel="self"/>
   <link href="http://lgrcyanny.github.com/"/>
-  <updated>2012-09-16T18:51:07+08:00</updated>
+  <updated>2012-09-22T20:38:52+08:00</updated>
   <id>http://lgrcyanny.github.com/</id>
   <author>
     <name><![CDATA[Cyanny]]></name>
@@ -36,7 +36,180 @@
 
 <hr />
 
-<p>{% include_code Heap Sort lang:java algorithm/heapsort.java %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Heap Sort  (heapsort.java)</span> <a href='/downloads/code/algorithm/heapsort.java'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> * Heap sort for an array</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HeapSort</span>
+</span><span class='line'><span class="o">{</span>
+</span><span class='line'>	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">heapSort</span> <span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">)</span>
+</span><span class='line'>	<span class="o">{</span>
+</span><span class='line'>		<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class='line'>		<span class="c1">// Build a max heap</span>
+</span><span class='line'>		<span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">;</span> <span class="n">i</span><span class="o">--)</span>
+</span><span class='line'>		<span class="o">{</span>
+</span><span class='line'>			<span class="n">filterDown</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
+</span><span class='line'>		<span class="o">}</span>
+</span><span class='line'>		<span class="c1">//Swap the last element with the first element,</span>
+</span><span class='line'>		<span class="c1">//then bulid the max heap again</span>
+</span><span class='line'>		<span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">--)</span>
+</span><span class='line'>		<span class="o">{</span>
+</span><span class='line'>			<span class="n">swap</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">i</span><span class="o">);</span>
+</span><span class='line'>			<span class="n">filterDown</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">i</span><span class="o">);</span>
+</span><span class='line'>		<span class="o">}</span>
+</span><span class='line'>	<span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>	<span class="cm">/**</span>
+</span><span class='line'><span class="cm">	 * Get the left child of i</span>
+</span><span class='line'><span class="cm">	 * @param i</span>
+</span><span class='line'><span class="cm">	 * @return</span>
+</span><span class='line'><span class="cm">	 */</span>
+</span><span class='line'>	<span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">leftChild</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">)</span>
+</span><span class='line'>	<span class="o">{</span>
+</span><span class='line'>		<span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class='line'>	<span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>	<span class="cm">/**</span>
+</span><span class='line'><span class="cm">	 * @param arr  The array to be heap sorted</span>
+</span><span class='line'><span class="cm">	 * @param i    The index which is the start to be filter down</span>
+</span><span class='line'><span class="cm">	 * @param n    The length</span>
+</span><span class='line'><span class="cm">	 */</span>
+</span><span class='line'>	<span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">filterDown</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="kt">int</span> <span class="n">n</span><span class="o">)</span>
+</span><span class='line'>	<span class="o">{</span>
+</span><span class='line'>		<span class="kt">int</span> <span class="n">child</span><span class="o">;</span>
+</span><span class='line'>		<span class="kt">int</span> <span class="n">tmp</span><span class="o">;</span>
+</span><span class='line'>		<span class="k">for</span> <span class="o">(</span><span class="n">tmp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">];</span> <span class="n">leftChild</span><span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span> <span class="o">=</span> <span class="n">child</span><span class="o">)</span>
+</span><span class='line'>		<span class="o">{</span>
+</span><span class='line'>			<span class="n">child</span> <span class="o">=</span> <span class="n">leftChild</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</span><span class='line'>			<span class="c1">// the condition &quot;child != n - 1&quot; is important</span>
+</span><span class='line'>			<span class="k">if</span> <span class="o">(</span><span class="n">child</span> <span class="o">!=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">arr</span><span class="o">[</span><span class="n">child</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">child</span> <span class="o">+</span> <span class="mi">1</span><span class="o">])</span>
+</span><span class='line'>			<span class="o">{</span>
+</span><span class='line'>				<span class="n">child</span><span class="o">++;</span>
+</span><span class='line'>			<span class="o">}</span>
+</span><span class='line'>			<span class="k">if</span> <span class="o">(</span><span class="n">tmp</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">child</span><span class="o">])</span>
+</span><span class='line'>			<span class="o">{</span>
+</span><span class='line'>				<span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">child</span><span class="o">];</span>
+</span><span class='line'>			<span class="o">}</span>
+</span><span class='line'>			<span class="k">else</span> <span class="o">{</span>
+</span><span class='line'>				<span class="k">break</span><span class="o">;</span>
+</span><span class='line'>			<span class="o">}</span>
+</span><span class='line'>		<span class="o">}</span>
+</span><span class='line'>		<span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">;</span>
+</span><span class='line'>	<span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">swap</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">,</span><span class="kt">int</span> <span class="n">j</span><span class="o">)</span>
+</span><span class='line'>	<span class="o">{</span>
+</span><span class='line'>		<span class="kt">int</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span><span class='line'>		<span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
+</span><span class='line'>		<span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">;</span>
+</span><span class='line'>	<span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">)</span>
+</span><span class='line'>	<span class="o">{</span>
+</span><span class='line'>		<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">:</span> <span class="n">arr</span><span class="o">)</span>
+</span><span class='line'>		<span class="o">{</span>
+</span><span class='line'>			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</span><span class='line'>		<span class="o">}</span>
+</span><span class='line'>	<span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>	<span class="cm">/**</span>
+</span><span class='line'><span class="cm">	 * @param args</span>
+</span><span class='line'><span class="cm">	 */</span>
+</span><span class='line'>	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span>
+</span><span class='line'>	<span class="o">{</span>
+</span><span class='line'>		<span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="o">{</span><span class="mi">1</span> <span class="o">,</span> <span class="mi">24</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">12</span><span class="o">,</span> <span class="mi">15</span><span class="o">,</span> <span class="mi">16</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">17</span><span class="o">,</span> <span class="mi">16</span><span class="o">};</span>
+</span><span class='line'>		<span class="n">heapSort</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>
+</span><span class='line'>		<span class="n">display</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>
+</span><span class='line'>	<span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   

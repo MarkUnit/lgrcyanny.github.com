@@ -4,7 +4,7 @@
   <title><![CDATA[Cyanny's Live]]></title>
   <link href="http://lgrcyanny.github.com/atom.xml" rel="self"/>
   <link href="http://lgrcyanny.github.com/"/>
-  <updated>2012-09-16T18:48:31+08:00</updated>
+  <updated>2012-09-22T20:38:52+08:00</updated>
   <id>http://lgrcyanny.github.com/</id>
   <author>
     <name><![CDATA[Cyanny]]></name>
@@ -30,15 +30,17 @@
 
 <h2>一个简单的方法让心里很不是滋味，犯二了啊。。。</h2>
 
-<blockquote><ol>
+<blockquote>
+<ol>
 <li>备份通讯录和短信等东东</li>
-<li>下载官方ROM，网上很多的，我装了Dream_Rise_IS_CM9_0413.zip</li>
-<li>下载一个<strong>一键解锁</strong>工具（网上到处都是），这个工具是官方的解锁方式，可靠的说</li>
-<li>下载<strong>刷机精灵</strong>，采用HTC Sync 模式连接，选择需要的ROM开始刷机，在刷机精灵里面下载了<strong>HTC G11 ICS 4.0.4 极速省电倾力制作 适合长久使用 参赛版.zip</strong> 和 <strong>HTC G11 Superior Sense4 V5.1-Full Sense4 毒蛇微调 三指手势快速设置.zip</strong> 两个ROM， 都报错 <em>找不到Boot.img 1060</em> 最后还是自己下载的ROM刷成功了</li>
-<li>如果顺利的话，用刷机精灵很快就可以刷好了
-最后就很开心啦~~</li>
+<li>下载官方ROM，网上很多的，我下了Dream_Rise_IS_CM9_0413.zip</li>
+<li>下载一个**一键解锁**工具（网上到处都是），这个工具是官方的解锁方式，应该可靠</li>
+<li>下载**刷机精灵**，采用HTC Sync 模式连接，选择需要的ROM开始刷机，在刷机精灵里面下载了**HTC G11 ICS 4.0.4 极速省电倾力制作 适合长久使用 参赛版.zip** 和 **HTC G11 Superior Sense4 V5.1-Full Sense4 毒蛇微调 三指手势快速设置.zip** 两个ROM， 都报错 *找不到Boot.img 1060* 最后还是自己下载的ROM刷成功了</li>
+<li>如果顺利的话，用刷机精灵很快就可以刷好了</li>
 </ol>
+<strong>最后就很开心啦~~</strong>
 </blockquote>
+
 ]]></content>
   </entry>
   
