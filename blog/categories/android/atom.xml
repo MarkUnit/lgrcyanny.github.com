@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Cyanny's Live]]></title>
   <link href="http://lgrcyanny.github.com/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://lgrcyanny.github.com/"/>
-  <updated>2012-09-24T22:12:29+08:00</updated>
+  <updated>2012-09-29T21:53:23+08:00</updated>
   <id>http://lgrcyanny.github.com/</id>
   <author>
     <name><![CDATA[Cyanny]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[android.process.acore has stopped 意外停止解决办法]]></title>
+    <link href="http://lgrcyanny.github.com/blog/2012/09/29/process-dot-android-dot-acore-has-stopped/"/>
+    <updated>2012-09-29T21:42:00+08:00</updated>
+    <id>http://lgrcyanny.github.com/blog/2012/09/29/process-dot-android-dot-acore-has-stopped</id>
+    <content type="html"><![CDATA[<p>最近使用手机，刚刷的4.04，非常开心，但是这两天突然报错了，就是可恶的“android.process.acore has stopped”
+一筹莫展中问了baidu,google,重新下了个刷机的CM9包，刷了，在豌豆荚下载软件，各种开心时，又报错了，然后恢复出厂设置，哎，又重来了，后来在baidu找到一个解决方法<br></p>
+
+<h3>Gmail 通讯录引起的问题</h3>
+
+<p>天知道，我用了QQ通信录，觉得很不错，然后从豌豆荚导入通信录，无奈总是会有重复数据，来自原来的gmail的通讯录，可能是这个原因引起android.process.acore has stopped，所以做了以下几件事： <br></p>
+
+<br>
+
+
+<p>&lt;<blockquote>
+1. 重新恢复了出厂设置
+2. 到gmail中把通讯录全部删除，重新导入，并且去除重复，网上说去除重复很重要，不然还报错，目前运转良好。
+</blockquote></p>
+
+<hr />
+
+<p>带着狐疑的心态，开始使用了，但是之前还怀疑过是不是一些需要root权限的软件搞的，还须进一步尝试，正在不断摸索</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[HTC Incredible S G11 RUU(G11 刷机4.0 简单的方法)]]></title>
