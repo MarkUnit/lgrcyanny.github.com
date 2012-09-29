@@ -4,7 +4,7 @@
   <title><![CDATA[Cyanny's Live]]></title>
   <link href="http://lgrcyanny.github.com/atom.xml" rel="self"/>
   <link href="http://lgrcyanny.github.com/"/>
-  <updated>2012-09-29T21:53:23+08:00</updated>
+  <updated>2012-09-29T22:19:29+08:00</updated>
   <id>http://lgrcyanny.github.com/</id>
   <author>
     <name><![CDATA[Cyanny]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[android.process.acore has stopped 意外停止解决办法]]></title>
+    <title type="html"><![CDATA[android.process.acore 意外停止解决办法]]></title>
     <link href="http://lgrcyanny.github.com/blog/2012/09/29/process-dot-android-dot-acore-has-stopped/"/>
     <updated>2012-09-29T21:42:00+08:00</updated>
     <id>http://lgrcyanny.github.com/blog/2012/09/29/process-dot-android-dot-acore-has-stopped</id>
@@ -28,10 +28,11 @@
 <br>
 
 
-<p>&lt;<blockquote>
+<blockquote>
 1. 重新恢复了出厂设置
 2. 到gmail中把通讯录全部删除，重新导入，并且去除重复，网上说去除重复很重要，不然还报错，目前运转良好。
-</blockquote></p>
+</blockquote>
+
 
 <hr />
 
